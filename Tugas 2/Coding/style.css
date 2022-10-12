@@ -1,0 +1,63 @@
+body, html {
+    margin:0;
+    padding:0;
+    color:#000;
+}
+
+#header {
+    padding:0px 10px;
+    
+}
+
+#wrapper {
+    width:1200px;
+    margin:0 auto;
+}
+
+#main {
+    float:left;
+    width:800px;
+    padding:10px;
+}
+
+#sidebar {
+    float:right;
+    width:360px;
+    padding:10px;
+}
+
+#footer {
+    clear:both;
+    padding:5px 10px;
+}
+
+#kategori {
+position: relative;
+display: inline-block;
+vertical-align: middle;
+}
+
+ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+display: list-item;
+text-align: -webkit-match-parent;
+}
+
+#tag {
+padding: 5px 12px;
+border-radius: 4px;
+border: 1px solid var(--br-list);
+color: white;
+background: black;
+display: block;
+font-weight: 500;
+max-width: 150px;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+}
