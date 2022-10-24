@@ -1,37 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
 body, html {
-    margin:0;
-    padding:0;
+    
     color:#000;
 }
 
-#header {
+.header {
     padding:0px 10px;
     
 }
 
-#wrapper {
+h1 {
+    text-align: center;
+    font-size: 30px;
+    
+  }
+
+.wrapper {
     width:1200px;
     margin:0 auto;
 }
 
-#main {
+.main {
     float:left;
     width:800px;
     padding:10px;
 }
 
-#sidebar {
+.sidebar {
     float:right;
     width:360px;
     padding:10px;
 }
 
-#footer {
+.kategori {
     clear:both;
     padding:5px 10px;
 }
 
-#kategori {
+.gdg {
 position: relative;
 display: inline-block;
 vertical-align: middle;
@@ -41,6 +50,8 @@ ol, ul {
     margin: 0;
     padding: 0;
     list-style: none;
+    position: sticky;
+    top: 0;
 }
 
 li {
@@ -48,7 +59,7 @@ display: list-item;
 text-align: -webkit-match-parent;
 }
 
-#tag {
+.tag {
 padding: 5px 12px;
 border-radius: 4px;
 border: 1px solid var(--br-list);
@@ -60,4 +71,50 @@ max-width: 150px;
 white-space: nowrap;
 overflow: hidden;
 text-overflow: ellipsis;
+text-decoration: none;
+text-align: center;
 }
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  ul.topnav li {float: left;}
+  
+  ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  ul.topnav li a:hover:not(.active) {background-color: #111;}
+  
+  ul.topnav li a.active {background-color: #d15502;}
+  
+  ul.topnav li.right {float: right;}
+  
+  @media screen and (max-width: 600px) {
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+  }
+  footer {
+    text-align: center;
+    padding: 3px;
+    background-color:#333;
+    color: white;
+    display: block;
+  }
+
+  footer a {
+    text-decoration: none;
+    color: white;
+  }
+  footer a:hover {
+    color: #0055d4;
+  }
